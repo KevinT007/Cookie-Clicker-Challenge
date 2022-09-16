@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cookie Clicker</title>
+  </head>
+  <body>
+    <section class="info">
+      <article class="numberOfCookies" id="noc">
+        <h2>Cookies</h2>
+        <h3 id="num">0</h3>
+      </article>
+      <article class="rateOfCookies" id="roc">
+        <h2>Cookies per Second</h2>
+        <h3 id="per">0</h3>
+        <h2>Cookies per Click</h2>
+        <h3 id="click">1</h3>
+      </article>
+    </section>
+    <section class="cookie">
+      <img
+        class="cookieclicker"
+        onclick="increase()"
+        src="Images/Cookie.png"
+        alt="cookie"
+      />
+    </section>
+    <section id="upgrade">
+      <button class="btn" id="smallUpgrade" onclick="smallUpgrade();">
+        +1 Cookies Per Click: 25 cookies.
+      </button>
+      <button class="btn" id="bigUpgrade" onclick="bigUpgrade();">
+        +5 Cookies Per Click: 250 cookies.
+      </button>
+      <button class="btn" id="autoClick" onclick="autoClick();">
+        +1 Cookies Per Second: 50 cookies.
+      </button>
+      <button class="btn" id="bigAutoClick" onclick="bigAutoClick();">
+        +5 Cookies Per Second: 300 cookies.
+      </button>
+    </section>
+    <!-- Java Link -->
+    <script src="app.js"></script>
+  </body>
+</html>
